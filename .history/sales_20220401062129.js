@@ -2,6 +2,10 @@
 // commission = gross sales * 9%
 // range floor / 100 - 2 = index 0 - 8
 // test:
+
+// arr = ["200 - 299", "300 - 399", "400 - 499"];
+// console.log(arr);
+// arr.slice()
 x1 = Math.floor(218 / 100) - 2;
 x2 = Math.floor(258 / 100) - 2;
 x3 = Math.floor(288 / 100) - 2;
@@ -17,4 +21,3 @@ y3 = Math.floor(350 / 100) - 2;
 console.log(y1);
 console.log(y2);
 console.log(y3);
-// works for all ranges below the last. Just check for >1000 first.
