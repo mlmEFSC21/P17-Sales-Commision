@@ -15,7 +15,6 @@ const salesInput = document.getElementById("salesInp");
 const td = document.querySelectorAll("td#ranges");
 form.addEventListener("submit", getWeeklySal);
 const resetBtn = document.querySelector("#clear-btn");
-resetBtn.addEventListener("click", clearAllSalaries);
 
 function getWeeklySal(e) {
     e.preventDefault();
@@ -47,15 +46,6 @@ function calcSalaryRange(totalSalary) {
 function fillRangeCol() {
     for (let i = 0; i < salaryRanges.length; i++) {
         td[i].innerText = salaryRanges[i];
-    }
-}
-//reset button
-function clearAllSalaries() {
-    salesInput.value = "";
-    salaryRanges = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-    weeklyGrossSales = [];
-    for (let i = 0; i < salaryRanges.length; i++) {
-        td[i].innerText = 0;
     }
 }
 
