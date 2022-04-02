@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="sales.css" />
-        <script defer src="sales.js"></script>
+        <script src="sales.js" defer></script>
         <title>Company Salary Range Counters</title>
     </head>
     <body>
@@ -18,7 +18,13 @@
                     <label for="grossSales"
                         >Please enter the gross sales for the next employee.</label
                     >
-                    <input type="text" name="grossSales" class="salesInp" id="salesInp" required />
+                    <input
+                        type="number"
+                        name="grossSales"
+                        class="grossSales"
+                        id="grossSales"
+                        required
+                    />
                     <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
                     <button type="reset" class="clear-btn">Clear</button>
                 </form>

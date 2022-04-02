@@ -21,7 +21,7 @@ function getWeeklySal(e) {
     weeklyGrossSales = parseInt(salesInput.value);
     calcCommission();
     calcTotalWeeklySalary();
-    calcSalaryRange(totalSalary);
+    calcSalaryRange();
     fillRangeCol();
     salesInput.value = "";
 }
@@ -30,12 +30,10 @@ function calcCommission() {
 }
 function calcTotalWeeklySalary() {
     totalSalary = baseSalary + commissionAmount;
-    console.log(totalSalary);
-    console.log(salaryRanges);
 }
-function calcSalaryRange(totalSalary) {
+function calcSalaryRange() {
     if (totalSalary >= 1000) {
-        salaryRanges[8] += 1;
+        salaryRanges[8] + 1;
     } else if (totalSalary < 1000) {
         let i = Math.floor(totalSalary / 100) - 2;
         salaryRanges[i] = salaryRanges[i] + 1;

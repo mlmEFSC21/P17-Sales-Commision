@@ -31,7 +31,6 @@ function calcCommission() {
 function calcTotalWeeklySalary() {
     totalSalary = baseSalary + commissionAmount;
     console.log(totalSalary);
-    console.log(salaryRanges);
 }
 function calcSalaryRange(totalSalary) {
     if (totalSalary >= 1000) {

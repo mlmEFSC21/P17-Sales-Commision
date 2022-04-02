@@ -11,14 +11,15 @@ let salaryRanges = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 let weeklyGrossSales = [];
 
 const form = document.querySelector("#salaryForm");
-const salesInput = document.getElementById("salesInp");
+const salesInput = document.querySelector("#salesInp");
 const td = document.querySelectorAll("td#ranges");
 form.addEventListener("submit", getWeeklySal);
 
 function getWeeklySal(e) {
     e.preventDefault();
     employeeNum++;
-    weeklyGrossSales = parseInt(salesInput.value);
+    weeklyGrossSales.push(ParseInt(salesInput.value));
+    console.log(salesInput.value);
     calcCommission();
     calcTotalWeeklySalary();
     calcSalaryRange(totalSalary);
@@ -26,20 +27,19 @@ function getWeeklySal(e) {
     salesInput.value = "";
 }
 function calcCommission() {
-    commissionAmount = weeklyGrossSales * 0.09;
+    commissionAmount = weeklyGrossSales[employeeNum] * 0.09;
 }
 function calcTotalWeeklySalary() {
     totalSalary = baseSalary + commissionAmount;
-    console.log(totalSalary);
-    console.log(salaryRanges);
 }
-function calcSalaryRange(totalSalary) {
-    if (totalSalary >= 1000) {
-        salaryRanges[8] += 1;
-    } else if (totalSalary < 1000) {
-        let i = Math.floor(totalSalary / 100) - 2;
+function calcSalaryRange(x) {
+    if (x >= 1000) {
+        salaryRanges[8] + 1;
+    } else {
+        let y = Math.floor(x / 100) - 2;
         salaryRanges[i] = salaryRanges[i] + 1;
     }
+    console.log(salaryRanges[8]);
 }
 //append the table
 function fillRangeCol() {

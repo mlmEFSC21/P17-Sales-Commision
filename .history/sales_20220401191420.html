@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="sales.css" />
-        <script defer src="sales.js"></script>
+        <script src="sales.js" defer></script>
         <title>Company Salary Range Counters</title>
     </head>
     <body>
@@ -18,7 +18,13 @@
                     <label for="grossSales"
                         >Please enter the gross sales for the next employee.</label
                     >
-                    <input type="text" name="grossSales" class="salesInp" id="salesInp" required />
+                    <input
+                        type="number"
+                        name="grossSales"
+                        class="grossSales"
+                        id="grossSales"
+                        required
+                    />
                     <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
                     <button type="reset" class="clear-btn">Clear</button>
                 </form>
@@ -37,39 +43,39 @@
                     <tbody>
                         <tr>
                             <td>$200-299</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-1" id="numEmployees-1"></td>
                         </tr>
                         <tr>
                             <td>$300-399</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-2" id="numEmployees-2"></td>
                         </tr>
                         <tr>
                             <td>$400-499</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-3" id="numEmployees-3"></td>
                         </tr>
                         <tr>
                             <td>$500-599</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-4" id="numEmployees-4"></td>
                         </tr>
                         <tr>
                             <td>$600-699</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-5" id="numEmployees-5"></td>
                         </tr>
                         <tr>
                             <td>$700-799</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-6" id="numEmployees-6"></td>
                         </tr>
                         <tr>
                             <td>$800-899</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-7" id="numEmployees-7"></td>
                         </tr>
                         <tr>
                             <td>$900-999</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-8" id="numEmployees-8"></td>
                         </tr>
                         <tr>
                             <td>$1000 and over</td>
-                            <td class="ranges" id="ranges"></td>
+                            <td class="numEmployees-9" id="numEmployees-9"></td>
                         </tr>
                     </tbody>
                     <tfoot></tfoot>
