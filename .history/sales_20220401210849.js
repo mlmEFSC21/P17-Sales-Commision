@@ -43,9 +43,9 @@ function calcSalaryRange(totalSalary) {
 }
 //append the table
 function fillRangeCol() {
-    for (let i = 0; i < salaryRanges.length; i++) {
-        td[i].innerText = salaryRanges[i];
-    }
+    // for (let i = 0; i < arr.len; i++)
+    let index = employeeNum - 1;
+    td.innerText = salaryRanges[index];
 }
 
 console.log(salaryRanges);
