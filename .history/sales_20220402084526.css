@@ -68,21 +68,6 @@ tr:nth-child(even) {
     background-color: var(--clr-secondary);
 }
 button {
-    height: 30px;
-    width: 60px;
-    border: 0.5px solid black;
-    box-shadow: 1px 1px 3px black;
-}
-.submit-btn {
-    background-color: var(--clr-secondary);
-}
-.submit-btn:hover {
-    background-color: #93c779;
-}
-.clear-btn {
-    background-color: darkred;
-    color: white;
-}
-.clear-btn:hover {
-    background-color: #ff0000;
+    height: 50px;
+    width: 75px;
 }

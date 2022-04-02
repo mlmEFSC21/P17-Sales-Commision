@@ -12,7 +12,7 @@ let weeklyGrossSales = [];
 
 const form = document.querySelector("#salaryForm");
 const salesInput = document.getElementById("salesInp");
-const td = document.querySelectorAll("td.ranges");
+const td = document.querySelectorAll("td#ranges");
 form.addEventListener("submit", getWeeklySal);
 const resetBtn = document.querySelector("#clear-btn");
 resetBtn.addEventListener("click", clearAllSalaries);

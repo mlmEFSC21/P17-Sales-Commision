@@ -20,7 +20,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-color: var(--clr-secondary);
 }
 
 .mainContent {
@@ -47,42 +46,14 @@ body {
 table {
     border-collapse: collapse;
     border: 3px solid black;
-    font-size: 1.25em;
+    font-size: 1.35em;
     background-color: var(--clr-primary);
 }
 th,
 tr,
 td {
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
+    margin: 15px;
+    padding: 15px;
     text-align: center;
-}
-caption {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--clr-secondary);
-}
-tr:nth-child(even) {
-    background-color: var(--clr-secondary);
-}
-button {
-    height: 30px;
-    width: 60px;
-    border: 0.5px solid black;
-    box-shadow: 1px 1px 3px black;
-}
-.submit-btn {
-    background-color: var(--clr-secondary);
-}
-.submit-btn:hover {
-    background-color: #93c779;
-}
-.clear-btn {
-    background-color: darkred;
-    color: white;
-}
-.clear-btn:hover {
-    background-color: #ff0000;
 }

@@ -76,9 +76,6 @@ button {
 .submit-btn {
     background-color: var(--clr-secondary);
 }
-.submit-btn:hover {
-    background-color: #93c779;
-}
 .clear-btn {
     background-color: darkred;
     color: white;

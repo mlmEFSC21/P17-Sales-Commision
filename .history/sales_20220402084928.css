@@ -70,18 +70,13 @@ tr:nth-child(even) {
 button {
     height: 30px;
     width: 60px;
-    border: 0.5px solid black;
-    box-shadow: 1px 1px 3px black;
 }
 .submit-btn {
     background-color: var(--clr-secondary);
 }
-.submit-btn:hover {
-    background-color: #93c779;
-}
 .clear-btn {
     background-color: darkred;
-    color: white;
+    text: white;
 }
 .clear-btn:hover {
     background-color: #ff0000;
